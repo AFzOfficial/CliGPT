@@ -14,6 +14,7 @@ def Typing(text):
 
 
 def app():
+    os.system('cls' if platform.system() == 'Windows' else 'clear')
     while True:
         promt = input('\n>>> ')
 
