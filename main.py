@@ -6,6 +6,7 @@ openai.api_key = '' # SET YOUR API KEY
 messages = []
 
 
+
 def Typing(text):
     for char in text:
         time.sleep(0.020)
@@ -13,12 +14,13 @@ def Typing(text):
 
 
 
+
 def app():
     os.system('cls' if platform.system() == 'Windows' else 'clear')
     while True:
-        promt = input('\n>>> ')
+        prompt = input('\n>>> ')
 
-        messages.append({"role": "user", "content": f"{promt}"})
+        messages.append({"role": "user", "content": f"{prompt}"})
 
         try:
             response = openai.ChatCompletion.create(
