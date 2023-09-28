@@ -2,7 +2,7 @@ import openai, os, time, platform
 
 openai.api_key = '' # set your API key
 
-# store messages in memmory
+# store messages in memory
 messages = []
 
 
