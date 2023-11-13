@@ -9,9 +9,9 @@ messages = []
 
 def type_animation(text):
     '''
-    this function for typing animation in CLI
+    this function for animte typing in stdout
     input: str
-    output: char
+    output: print characters in stdout
     '''
 
     for char in text:
